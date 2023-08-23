@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo_page.css">
+    
+</head>
+<body>
+    <div class="mainpage">
+        <div class="heading">
+            <h1>Create Task</h1>
+            <div class="search">
+            <input type="text" placeholder="search task" id="search" onchange="searchfunc()"/>
+            </div>
+        </div>
+        
+        <div class="addbutton">
+            <input type="text" id="taskname" placeholder="add task"/>
+            <button onclick="addtodo()">Add</button>
+        </div>
+        <div class="taskscontainer" id="taskscontainer">
+            
+        </div>
+        <button onclick="save()">Save</button>
+    </div>
+    <script src="todo_page.js"></script>
+</body>
+</html>
